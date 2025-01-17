@@ -1,7 +1,12 @@
 // Form submission handler
 document.getElementById("contactForm").addEventListener("submit", function (e) {
   e.preventDefault();
+
+  // Tambahkan pesan sukses
   alert("Form submitted successfully!");
+
+  // Reset form setelah submit
+  this.reset();
 });
 
 // toogle class active untuk hamburger menu
